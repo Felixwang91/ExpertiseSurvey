@@ -1,0 +1,7 @@
+("software development" OR "OSS" OR "Open Source" OR "Free Software" OR "FLOSS" OR "FOSS" OR "Software Engineering") 
+AND 
+("expert" OR "expertise" OR "knowledge" OR "skill" OR "code review" OR "fix bug" OR "task") 
+AND 
+("source code" OR "file" OR "method" OR "src" OR "artifact" OR "authorship" OR "code") 
+AND 
+("determine" OR "identify" OR "recommend" OR "browse")
