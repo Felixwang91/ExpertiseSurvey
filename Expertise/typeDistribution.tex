@@ -1,0 +1,39 @@
+\pgfplotstableread[row sep=\\,col sep=&]{
+    Type & Count \\
+    Characteristics & 8 \\
+    Manual & 5 \\
+    Historic & 18 \\
+    Sharing & 8 \\
+    Network & 2 \\
+    Others & 7 \\
+    }\typedata
+\begin{figure}
+
+    \begin{tikzpicture}
+        \begin{axis}[
+                ybar,
+                width=\textwidth,
+                height=.5\textwidth,
+                nodes near coords,
+                symbolic x coords={Characteristics, Manual, Historic, Sharing, Network, Others},
+                bar width = 40,
+                xtick=data,
+                xtick pos=bottom,
+                ytick pos=left,
+                ylabel={Count},
+                xticklabel style = {font=\tiny},
+                xticklabels={
+                    Expert Characteristics,
+                    Manual Location,
+                    Mining Historical,
+                    Sharing Content,
+                    Sharing Network,
+                    Others,
+                },
+            ]
+            \addplot table[x=Type,y=Count]{\typedata};
+        \end{axis}
+    \end{tikzpicture}
+    \caption{Publication Category Distribution of Papers in Literature Repository}
+    \label{typedis}
+\end{figure}

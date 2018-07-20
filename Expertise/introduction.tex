@@ -1,0 +1,55 @@
+\chapter{Introduction}
+
+Thriving with automation, the fields of artificial intelligence and machine learning are fundamentally changing software and conventional industries. The advance of these fields is transforming the way that we work and live. Human labor in automated routine tasks is replaced by machines and algorithms, but in other cases, automation is amplifying human labor, including in Software Engineering.
+
+An easily neglected factor is that Software Engineering is a human centered activity \cite{fischer2003desert}, and effectively managing human resource may greatly enhance the project productivity and collaboration quality \cite{brooks1995mythical}. Hence, successful software engineering activities require qualified developers with proper expertise in order to complete the task efficiently with higher than average performance. 
+
+A crucial aspect of managing human resource is locating expertise. Experts are able to recall their previous experience in similar work \cite{bilalić2017neuroscience,ericsson2006cambridge} with outstanding information process ability \cite{Simon:1996:SA:237774}. Various tasks in professional software development, such as, employees training and hiring, locating best personnel to perform product maintenance, and collaboration among teammates, all may benefit from effective expertise location \citep{bergersen2014construction}. However, there is still a lack of general understanding on expertise location approaches and techniques from a systematic review perspective. To further investigate this issue, we also intend to explore how can these location techniques be evaluated effectively in software engineering practice.
+
+To address the above practical problem, this survey study reviews related literature on expertise location approaches and systems within the field of Software Engineering and Computer Supported Collaborative Work, in order to explore the application of location techniques in Software Engineering practice. From this study, we aim to picture the brief history of the development of location techniques, particularly of automated recommender systems, and evaluate the state-of-the-art research.
+
+We take a systematic review strategy for this literature survey study. We compile a literature repository of 120 studies by querying four major online digital libraries (ACM Digital Library, Elsevier ScienceDirect, IEEE Xplore, Springer Link). We perform our literature review analysis through a six-step process, including steps of citation searching (snowball sampling), and manual literature addition based on experts suggestions, etc. After applying our review protocol and examining studies within our literature repository, 48 are identified as primary based on their research focuses (corresponding to the research question of this study) and impact to the field.
+
+By summarizing a view for the developing history of expertise location approaches and systems, we found that the granularity of the expertise location approaches has been becoming smaller, which are from performing a general jobs to finishing a specific task. According to the analysis on our literature repository, we identified two board categories of expertise research. The first category expertise research identifies the characteristics of expertise \cite{ericsson2006cambridge, MCKEITHEN1981307, soloway1984empirical}. These studies conducted field observation \cite{mcdonald1998just} to explore how experts communicate and solve problems in the real-world context. Further other studies employed lab experiments to empirically compare the difference between expert and novice based on their behavior while completing programming tasks \cite{MCKEITHEN1981307}. The second category aims to locate expertise through various approaches. This category can be further classified into three subcategories, locating expertise by leveraging the organizational setting manually \cite{yarosh2013need}; mining historical artifacts \cite{Anvik2006who, mockus2002expertise, schuler2008mining, servant2012whosefault, fritz2010degree}; and analyzing the social network for knowledge sharing \cite{nardi2002integrating, lin2009smallblue}. As the automated location techniques developing, and the emergence of new collaborative models such as the pull request model in open source community, more specific types of expertise have been identified for open source collaboration \cite{costa2016tipmerge, yu2016reviewer, chan2016improving}. We found recent studies have shifted their focuses mostly to mining historical artifacts. In addition, as the knowledge sharing platforms emerging particularly for software engineering, there is a lack of observational study to determine the role of these Q\&A sites in expertise location activities.
+
+% which are: locating expertise by leveraging the organizational setting; by mining historical artifacts; and by knowledge sharing.
+
+Our review also identifies the major limitations of existing research. First, there is a disconnect between early expertise studies and current location approaches. Observation study suggested mining historical artifacts is common practice in Software Engineering, and current automated location studies tend to focus mining historical data of expert which indicates their experience \cite{servant2012whosefault,costa2016tipmerge, yu2016reviewer}. However, early cognitive studies identify the expertise based on monitoring the performance of experts \cite{MCKEITHEN1981307, soloway1984empirical, pinto1988providing}. Thus, the over-reliance on predicting a subject's performance on her past experience with code artifacts may be a threat to locate expertise precisely. Second, current location approaches neglect the constraints for experts to coordinate such as neglecting time availability and geographical distance \cite{olson2000distance}. Finally, there is a lack of empirical evaluation in real-world context, and a few studies build the ground truth of expertise to evaluate their approaches by cross validation \cite{Anvik2006who, xu2016predicting}.
+
+Based on our review, we provide and discuss following guidelines for future studies in expertise location. Particularly, we suggest to fill the gap between early cognitive studies and location approaches, i.e., include supporting data of experts performance rather than only considering their activity record. Supporting data includes feedback from other peers and the organization or community, since these sources have watched or collaborated with the expert when performing their tasks. In addition, while designing the expertise location systems, the designer needs to beware of the \textit{paradox of expertise} \cite{dror2011paradox}, i.e., experts may be biased by their ability and their previous experience. Depending on the nature of the task, such as training and expertise sharing, the candidate with highest expertise may not always be best choice.
+
+The remainder of the paper is organized as follows. We first present a background on the nature of expertise in Chapter 2, which includes several studies in the cognitive and neuroscience perspectives. The protocol for conducting the survey, and the evaluation matrices that we applied for all the studies in our literature repository are presented in Chapter 3. In Chapter 4, we present the result of our survey includes the major findings we mentioned above and comparison between same type of expertise research. We provide a discussion of future expertise research direction and limitation of this work in Chapter 5. At last in Chapter 6, we conclude the our study.
+
+% \begin{figure}
+% \begin{verbatim}
+% #include <iostream>
+% int main(int argc, char** argv) {
+%   std::cout << "Hello World." << std::endl;
+%   return 0;
+% }
+% \end{verbatim}
+%   \caption{Example source code.}
+%   \label{fig:sourcecode}
+% \end{figure}
+
+% \begin{table}
+%   \centering
+%   \begin{tabular}{|rr|r|}
+%     \hline
+%     $x$ & $y$ & $z$ \\
+%     \hline
+%     14 & 12 & -2 \\
+%     0 & 33 & -25 \\
+%     -3 & 11 & 22 \\
+%     4 & 4 & 6 \\
+%     \hline
+%   \end{tabular}
+%   \caption{Example coordinates.}
+%   \label{tab:coordinates}
+% \end{table}
+
+
+%%% Local Variables: ***
+%%% mode: latex ***
+%%% TeX-master: "thesis.tex" ***
+%%% End: ***
